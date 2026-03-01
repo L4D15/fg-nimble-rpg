@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+    <windowclass name="charsheet_main_nimble">
+        <script file="campaign/scripts/char_main.lua" />
+        <sheetdata>
+            
+        </sheetdata>
+    </windowclass>
+</root>

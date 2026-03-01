@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="1.0.0" release="1" logo="logo.png">
+    <announcement text="Nimble ruleset for Fantasy Grounds" font="emotefont" icon="rulesetlogo_CoreRPG" />
+
+    <description>
+        <displayname>Nimble (Unofficial)</displayname>
+        <displayversion>2E</displayversion>
+        <text>Nimble second edition ruleset</text>
+        <author>Ladislao Lainez</author>
+    </description>
+
+    <importruleset source="CoreRPG" />
+
+    <includefile source="strings_nimble.xml" />
+
+    <includefile source="campaign/record_char.xml" />
+    <includefile source="campaign/record_char_main.xml" />
+    <includefile source="campaign/record_char_skills.xml" />
+    <includefile source="campaign/record_char_abilities.xml" />
+    <includefile source="campaign/record_char_inventory.xml" />
+    <includefile source="campaign/record_char_actions.xml" />
+</root>
