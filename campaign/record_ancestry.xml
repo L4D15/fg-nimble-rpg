@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+    <windowclass name="reference_ancestry" copy="record_window">
+        <sheetdata>
+            <subwindow name="content" merge="join">
+                <class>reference_ancestry_main</class>
+            </subwindow> 
+        </sheetdata>
+    </windowclass>
+
+    <windowclass name="reference_ancestry_main">
+        <margins controls="15,0,20,2" />
+
+        <script file="campaign/scripts/ancestry_main.lua" />
+
+        <sheetdata>
+            <anchor_column name="columnanchor" />
+                
+            <label_column name="size_label">
+                <static textres="ancestry_size" />
+                </label_column>
+            <string_columnh name="size" />
+
+            <line_column name="divider" />
+
+            <header_column name="header_desc">
+                <static textres="ancestry_description" />
+            </header_column>
+
+            <ft_columnh name="description" />
+        </sheetdata>
+    </windowclass>
+
+</root>

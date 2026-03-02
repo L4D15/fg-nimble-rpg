@@ -12,6 +12,8 @@
 
     <importruleset source="CoreRPG" />
 
+    <script name="DataLibraryNimble" file="scripts/data_library_nimble.lua" />
+
     <includefile source="strings_nimble.xml" />
 
     <includefile source="campaign/record_char.xml" />
@@ -20,4 +22,6 @@
     <includefile source="campaign/record_char_abilities.xml" />
     <includefile source="campaign/record_char_inventory.xml" />
     <includefile source="campaign/record_char_actions.xml" />
+
+    <includefile source="campaign/record_ancestry.xml" />
 </root>

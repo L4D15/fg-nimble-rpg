@@ -4,7 +4,30 @@
     <windowclass name="charsheet_main_nimble">
         <script file="campaign/scripts/char_main.lua" />
         <sheetdata>
-            
+                <stringcontrol name="ancestry_name">
+                    <bounds>20,80,200,20</bounds>
+                    <font>reference-r</font>
+                    <frame name="bottomline" offset="0,0,0,0" />
+                    
+                    <script>
+                        function onDrop(x, y, draginfo)
+                            -- Comprueba si lo que soltamos es un enlace (shortcut)
+                            if draginfo.isType("shortcut") then
+                                local sClass, sRecord = draginfo.getShortcutData();
+                                
+                                -- Comprueba si la ventana origen es nuestra ventana de razas
+                                if sClass == "reference_race" then
+                                    -- Busca el nombre de la raza en la base de datos y lo escribe en el campo
+                                    local sRaceName = DB.getValue(DB.getPath(sRecord, "name"), "");
+                                    setValue(sRaceName);
+                                    
+                                    -- Devuelve true para indicarle a FG que el drop ha sido un éxito
+                                    return true;
+                                end
+                            end
+                        end
+                    </script>
+                </stringcontrol>
         </sheetdata>
     </windowclass>
 </root>
