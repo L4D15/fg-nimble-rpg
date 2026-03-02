@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+    <windowclass name="reference_class" copy="record_window_tabbed">
+        <tab merge="add">
+            <name>main</name>
+            <resource>tab_main</resource>
+            <class>reference_class_main</class>
+            <embed />
+        </tab>
+        <sheetdata>
+        </sheetdata>
+    </windowclass>
+
+    <windowclass name="reference_class_main">
+        <margins control="15,0,20,2" /> 
+        <script file="campaign/scripts/class_main.lua" />
+        <sheetdata>
+            <anchor_column name="columnanchor" />
+            
+            <label_column name="base_hp_label">
+                <static>Base HP</static>
+            </label_column>
+            <number_column name="base_hp" />
+
+            <line_column name="divider" />
+
+            <header_column name="header_desc">
+                <static>Description &amp; Features</static>
+            </header_column>
+            <ft_columnh name="description" />
+        </sheetdata>
+    </windowclass>
+
+</root>

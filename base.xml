@@ -24,4 +24,5 @@
     <includefile source="campaign/record_char_actions.xml" />
 
     <includefile source="campaign/record_ancestry.xml" />
+    <includefile source="campaign/record_class.xml" />
 </root>

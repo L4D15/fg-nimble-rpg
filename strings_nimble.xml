@@ -6,10 +6,18 @@
     <string name="tab_inventory">Inventory</string>
     <string name="tab_notes">Notes</string>
     <string name="tab_actions">Actions</string>
+
+    <!-- Ancestry -->
     <string name="library_recordtype_label_ancestry">Ancestries</string>
     <string name="library_recordtype_empty_ancestry">&lt;New Ancestry&gt;</string>
     <string name="ancestry">Ancestry</string>
     <string name="ancestry_type">Type</string>
     <string name="ancestry_size">Size</string>
     <string name="ancestry_description">Description</string>
+
+    <!-- Classes -->
+    <string name="library_recordtype_label_class">Classes</string>
+    <string name="library_recordtype_empty_class">&lt;New Class&gt;</string>
+    <string name="class_description">Description</string>
+    
 </root>
