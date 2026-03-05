@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root>
-    <template name="number_abilityscore">
+
+    <template name="number_statscore">
         <numberfield>
             <default>1</default>
-            <min>-12</min>
-            <max>12</max>
+            <min>-5</min>
+            <max>5</max>
             <frame name="fielddark" offset="0,0,0,0" />
-            <script file="campaign/scripts/number_abilityscore.lua" />
+            <displaysign />
+            <script file="campaign/scripts/number_statscore.lua" />
         </numberfield>
     </template>
 </root>

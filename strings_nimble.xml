@@ -9,10 +9,14 @@
 
     <!-- Attributes -->
     <string name="char_label_stats">Stats</string>
+    <string name="strength">Strength</string>
+    <string name="dexterity">Dexterity</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="will">Will</string>
     <string name="strength_short">STR</string>
     <string name="dexterity_short">DEX</string>
     <string name="intelligence_short">INT</string>
-    <string name="wisdom_short">WIS</string>
+    <string name="will_short">WIL</string>
 
     <!-- Ancestry -->
     <string name="library_recordtype_label_ancestry">Ancestries</string>
