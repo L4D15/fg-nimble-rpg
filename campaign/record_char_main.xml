@@ -19,6 +19,62 @@
                 <bounds>25,0,100,30</bounds>
                 <labelres>ancestry</labelres>
             </string_labeled>
+
+            <!-- Attributes -->
+            <!--
+            <anchor_column name="columnanchor_attributes">
+                <anchored position="insidetopleft" offset="20,60" width="70" height="200" />
+                <frame name="groupbox" offset="0,0,0,0" />
+            </anchor_column>
+            -->
+
+            <genericcontrol name="attributes_box">
+                <anchored position="insidetopleft" offset="20,60" width="70" height="260" />
+            </genericcontrol>
+
+            <genericcontrol name="columnanchor_attributes">
+                <anchored to="attributes_box" position="insidetop" height="0" />
+            </genericcontrol>
+
+            <number_abilityscore name="strength" source="attributes.strength">
+                <anchored to="columnanchor_attributes">
+                    <top anchor="bottom" relation="relative" offset="10" />
+                    <left offset="5" />
+                    <right offset="-5" />
+                    <size height="50" />
+                </anchored>
+                <labelres>strength_short</labelres>
+            </number_abilityscore>
+
+            <number_abilityscore name="dexterity" source="attributes.dexterity">
+                <anchored to="columnanchor_attributes">
+                    <top anchor="bottom" relation="relative" offset="10" />
+                    <left offset="5" />
+                    <right offset="-5" />
+                    <size height="50" />
+                </anchored>
+                <labelres>dexterity_short</labelres>
+            </number_abilityscore>
+
+            <number_abilityscore name="intelligence" source="attributes.intelligence">
+                <anchored to="columnanchor_attributes">
+                    <top anchor="bottom" relation="relative" offset="10" />
+                    <left offset="5" />
+                    <right offset="-5" />
+                    <size height="50" />
+                </anchored>
+                <labelres>intelligence_short</labelres>
+            </number_abilityscore>
+
+            <number_abilityscore name="wisdom" source="attributes.wisdom">
+                <anchored to="columnanchor_attributes">
+                    <top anchor="bottom" relation="relative" offset="10" />
+                    <left offset="5" />
+                    <right offset="-5" />
+                    <size height="50" />
+                </anchored>
+                <labelres>wisdom_short</labelres>
+            </number_abilityscore>
         </sheetdata>
     </windowclass>
 </root>

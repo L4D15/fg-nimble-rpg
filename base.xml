@@ -13,8 +13,13 @@
     <importruleset source="CoreRPG" />
 
     <script name="DataLibraryNimble" file="scripts/data_library_nimble.lua" />
+    <script name="ActionAbility" file="campaign/scripts/manager_action_ability.lua" />
 
     <includefile source="strings_nimble.xml" />
+
+    <!-- Templates -->
+    <includefile source="campaign/template_campaign.xml" />
+    <includefile source="campaign/template_char.xml" />
 
     <includefile source="campaign/record_char.xml" />
     <includefile source="campaign/record_char_main.xml" />
