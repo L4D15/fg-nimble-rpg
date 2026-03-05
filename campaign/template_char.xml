@@ -2,13 +2,15 @@
 <root>
 
     <template name="number_statscore">
-        <numberfield>
-            <default>1</default>
+        <basicnumber>
+            <default>0</default>
             <min>-5</min>
             <max>5</max>
-            <frame name="fielddark" offset="0,0,0,0" />
+            <!--<frame name="fielddark" offset="0,0,0,0" />-->
             <displaysign />
-            <script file="campaign/scripts/number_statscore.lua" />
-        </numberfield>
+            <showemptywidget />
+            <frame name="fieldlight" offset="7,5,7,5" />
+            <script file="campaign/scripts/templates/number_statscore.lua" />
+        </basicnumber>
     </template>
 </root>

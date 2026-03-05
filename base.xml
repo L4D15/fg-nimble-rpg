@@ -16,6 +16,8 @@
     <script name="ActionAbility" file="campaign/scripts/manager_action_ability.lua" />
 
     <includefile source="strings_nimble.xml" />
+    <includefile source="graphics/graphics_fonts.xml" />
+    <includefile source="graphics/graphics_images.xml" />
 
     <!-- Templates -->
     <includefile source="campaign/template_campaign.xml" />

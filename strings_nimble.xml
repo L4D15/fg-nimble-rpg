@@ -7,8 +7,9 @@
     <string name="tab_notes">Notes</string>
     <string name="tab_actions">Actions</string>
 
-    <!-- Attributes -->
-    <string name="char_label_stats">Stats</string>
+    <!-- Stats -->
+    <string name="stats_title">Stats</string>
+    <string name="stats_bonus">Bonus</string>
     <string name="strength">Strength</string>
     <string name="dexterity">Dexterity</string>
     <string name="intelligence">Intelligence</string>

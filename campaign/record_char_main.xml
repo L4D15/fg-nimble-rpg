@@ -20,8 +20,9 @@
                 <labelres>ancestry</labelres>
             </string_labeled>
 
+            <!-- STATS -->
             <genericcontrol name="stats_box">
-                <anchored position="insidetopleft" offset="0,48" width="150" height="180" />
+                <anchored position="insidetopleft" offset="0,48" width="150" height="200" />
                 <frame name="groupbox" offset="5,5,5,5" />
             </genericcontrol>
 
@@ -29,23 +30,27 @@
                 <anchored to="stats_box" position="insidetop" height="0" />
             </genericcontrol>
 
-            <stringcontrol name="stats_title_label">
+            <!-- Header -->
+
+            <genericcontrol name="stats_header">
                 <anchored to="anchor_stats">
-                    <top anchor="bottom" relation="relative" offset="10" />
-                    <left offset="10" />
-                    <right offset="-10" />
-                    <size height="20" />
+                    <top anchor="bottom" relation="relative" offset="8" />
+                    <left offset="5" />
+                    <right offset="-5" />
+                    <size height="16" />
                 </anchored>
-                <font>reference-b</font>
-                <static>ATTRIBUTES</static>
-                <center /> 
-                <color>555555</color>
+            </genericcontrol>
+
+            <stringcontrol name="stats_header_bonus_label">
+                <anchored to="stats_header" position="insideleft" offset="100,0">
+                </anchored>
+                <static textres="stats_bonus" />
             </stringcontrol>
 
             <!-- STRENGTH-->
             <genericcontrol name="strength_row">
                 <anchored to="anchor_stats">
-                    <top anchor="bottom" relation="relative" offset="0" />
+                    <top anchor="bottom" relation="relative" offset="2" />
                     <left offset="5" />
                     <right offset="-5" />
                     <size height="32" />
@@ -53,19 +58,18 @@
             </genericcontrol>
 
             <stringcontrol name="strength_label">
-                <anchored to="strength_row" position="insideleft" offset="0,0">
+                <anchored to="strength_row" position="insideleft" offset="4,0">
                     <top anchor="top" />
                     <bottom anchor="bottom" />
-                    <size width="100" />
+                    <size width="80" />
                 </anchored>
                 <font>reference-b</font>
+                <left />
                 <static textres="strength" />
             </stringcontrol>
 
-            <number_statscore name="strength_score" source="attributes.strength">
-                <anchored to="strength_row" position="insideright" offset="0,0">
-                    <top anchor="top" />
-                    <bottom anchor="bottom" />
+            <number_statscore name="strength_score" source="attributes.strength.value">
+                <anchored to="strength_row" position="insideright" offset="8,0">
                     <size width="32" />
                 </anchored>
             </number_statscore>
@@ -73,7 +77,7 @@
             <!-- DEXTERITY-->
             <genericcontrol name="dexterity_row">
                 <anchored to="anchor_stats">
-                    <top anchor="bottom" relation="relative" offset="0" />
+                    <top anchor="bottom" relation="relative" offset="8" />
                     <left offset="5" />
                     <right offset="-5" />
                     <size height="32" />
@@ -81,19 +85,18 @@
             </genericcontrol>
 
             <stringcontrol name="dexterity_label">
-                <anchored to="dexterity_row" position="insideleft" offset="0,0">
+                <anchored to="dexterity_row" position="insideleft" offset="4,0">
                     <top anchor="top" />
                     <bottom anchor="bottom" />
-                    <size width="100" />
+                    <size width="80" />
                 </anchored>
                 <font>reference-b</font>
+                <left />
                 <static textres="dexterity" />
             </stringcontrol>
 
-            <number_statscore name="dexterity_score" source="attributes.dexterity">
-                <anchored to="dexterity_row" position="insideright" offset="0,0">
-                    <top anchor="top" />
-                    <bottom anchor="bottom" />
+            <number_statscore name="dexterity_score" source="attributes.dexterity.value">
+                <anchored to="dexterity_row" position="insideright" offset="8,0">
                     <size width="32" />
                 </anchored>
             </number_statscore>
@@ -101,55 +104,53 @@
             <!-- INTELLIGENCE-->
             <genericcontrol name="intelligence_row">
                 <anchored to="anchor_stats">
-                    <top anchor="bottom" relation="relative" offset="0" />
+                    <top anchor="bottom" relation="relative" offset="8" />
                     <left offset="5" />
                     <right offset="-5" />
-                    <size height="32" />
+                    <size height="30" />
                 </anchored>
             </genericcontrol>
 
             <stringcontrol name="intelligence_label">
-                <anchored to="intelligence_row" position="insideleft" offset="0,0">
+                <anchored to="intelligence_row" position="insideleft" offset="4,0">
                     <top anchor="top" />
                     <bottom anchor="bottom" />
-                    <size width="100" />
+                    <size width="80" />
                 </anchored>
                 <font>reference-b</font>
+                <left />
                 <static textres="intelligence" />
             </stringcontrol>
 
-            <number_statscore name="intelligence_score" source="attributes.intelligence">
-                <anchored to="intelligence_row" position="insideright" offset="0,0">
-                    <top anchor="top" />
-                    <bottom anchor="bottom" />
+            <number_statscore name="intelligence_score" source="attributes.intelligence.value">
+                <anchored to="intelligence_row" position="insideright" offset="8,0">
                     <size width="32" />
                 </anchored>
             </number_statscore>
 
-            <!-- WILLPOWER-->
+            <!-- WILL-->
             <genericcontrol name="will_row">
                 <anchored to="anchor_stats">
-                    <top anchor="bottom" relation="relative" offset="0" />
+                    <top anchor="bottom" relation="relative" offset="8" />
                     <left offset="5" />
                     <right offset="-5" />
-                    <size height="32" />
+                    <size height="30" />
                 </anchored>
             </genericcontrol>
 
             <stringcontrol name="will_label">
-                <anchored to="will_row" position="insideleft" offset="0,0">
+                <anchored to="will_row" position="insideleft" offset="4,0">
                     <top anchor="top" />
                     <bottom anchor="bottom" />
-                    <size width="100" />
+                    <size width="80" />
                 </anchored>
                 <font>reference-b</font>
+                <left />
                 <static textres="will" />
             </stringcontrol>
 
-            <number_statscore name="will_score" source="attributes.will">
-                <anchored to="will_row" position="insideright" offset="0,0">
-                    <top anchor="top" />
-                    <bottom anchor="bottom" />
+            <number_statscore name="will_score" source="attributes.will.value">
+                <anchored to="will_row" position="insideright" offset="8,0">
                     <size width="32" />
                 </anchored>
             </number_statscore>
