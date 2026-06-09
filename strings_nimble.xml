@@ -7,6 +7,10 @@
     <string name="tab_notes">Notes</string>
     <string name="tab_actions">Actions</string>
 
+    <!-- General -->
+    <string name="advantage_short">Adv</string>
+    <string name="disadvantage_short">Dis</string>
+
     <!-- Stats -->
     <string name="stats_title">Stats</string>
     <string name="stats_bonus">Bonus</string>
